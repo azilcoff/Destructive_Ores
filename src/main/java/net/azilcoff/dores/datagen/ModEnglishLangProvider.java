@@ -14,6 +14,6 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
-        translationBuilder.add(ModItems.getItemTranslationKey(ModItems.URANIUM), "Uranium");
+        translationBuilder.add(ModItems.URANIUM, "Uranium");
     }
 }
