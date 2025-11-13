@@ -1,8 +1,12 @@
 package net.azilcoff.dores;
 
 import net.azilcoff.dores.datagen.*;
+import net.azilcoff.dores.world.ModConfiguredFeatures;
+import net.azilcoff.dores.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class DestructiveOresDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -15,5 +19,12 @@ public class DestructiveOresDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModRecipeProvider::new);
         pack.addProvider(ModEnglishLangProvider::new);
+        pack.addProvider(ModRegistryDataGenerator::new);
 	}
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+    }
 }

@@ -4,6 +4,8 @@ import net.azilcoff.dores.block.ModBlocks;
 import net.azilcoff.dores.component.ModDataComponentTypes;
 import net.azilcoff.dores.entity.effect.ModStatusEffects;
 import net.azilcoff.dores.item.ModItems;
+import net.azilcoff.dores.world.gen.ModOreGeneration;
+import net.azilcoff.dores.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,5 +21,6 @@ public class DestructiveOres implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModDataComponentTypes.registerDataComponentTypes();
         ModStatusEffects.registerModStatusEffects();
+        ModWorldGeneration.generateModWorldGen();
 	}
 }
