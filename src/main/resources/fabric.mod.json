@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "dores",
+	"id": "uranium",
 	"version": "${version}",
-	"name": "Destructive Ores",
+	"name": "Uranium",
 	"description": "Adds more DESTRUCTIVE ores to Minecraft",
 	"authors": [
 		"azilcoff"
@@ -11,22 +11,22 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/azilcoff/Destructive_Ores.git"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/dores/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.azilcoff.dores.DestructiveOres"
+          "net.azilcoff.uranium.Uranium"
 		],
         "client": [
-            "net.azilcoff.dores.DestructiveOresClient"
+          "net.azilcoff.uranium.UraniumClient"
         ],
 		"fabric-datagen": [
-			"net.azilcoff.dores.DestructiveOresDataGenerator"
+          "net.azilcoff.uranium.UraniumDataGenerator"
 		]
 	},
 	"mixins": [
-		"dores.mixins.json"
+      "uranium.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
