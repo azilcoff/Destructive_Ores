@@ -3,7 +3,7 @@
 	"id": "uranium",
 	"version": "${version}",
 	"name": "Uranium",
-	"description": "Adds more DESTRUCTIVE ores to Minecraft",
+	"description": "Adds more uranium to Minecraft",
 	"authors": [
 		"azilcoff"
 	],
