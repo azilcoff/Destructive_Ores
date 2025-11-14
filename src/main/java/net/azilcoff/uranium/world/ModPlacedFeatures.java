@@ -27,7 +27,7 @@ public class ModPlacedFeatures {
 
         registerFeaturePlacement(context,URANIUM_PLACEMENT_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.URANIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(
-                        12,
+                        2,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-50), YOffset.fixed( -15))
                 ));
     }

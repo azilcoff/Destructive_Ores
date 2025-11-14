@@ -17,7 +17,7 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add(ModItems.URANIUM, "Uranium");
         translationBuilder.add(ModItems.URANIUM_SWORD,"Uranium Sword");
-        translationBuilder.add("effect.dores.high_radiation","High Radiation");
+        translationBuilder.add("effect.uranium.high_radiation","High Radiation");
         translationBuilder.add(ModBlocks.URANIUM_ORE,"Uranium Ore");
         translationBuilder.add(ModBlocks.DEEPSLATE_URANIUM_ORE, "Deepslate Uranium Ore");
     }
